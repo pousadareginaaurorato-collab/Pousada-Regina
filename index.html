@@ -447,6 +447,10 @@
         <div class="como-icon">🌙</div>
         <h3>Sossego Garantido</h3>
         <p>Longe do barulho da cidade, perto da paz que você tanto busca.</p>
+      <div class="como-card reveal">
+        <div class="como-icon">🐾</div>
+        <h3>Pet Friendly</h3>
+        <p>Seu amigo de quatro patas é muito bem-vindo! Aceitamos animais de estimação sob consulta.</p>
       </div>
     </div>
   </section>
@@ -669,7 +673,6 @@
       });
     }, { threshold: 0.12 });
     reveals.forEach(el => observer.observe(el));
-
     // Nav scroll style
     const navEl = document.querySelector('nav');
     window.addEventListener('scroll', () => {
@@ -677,6 +680,43 @@
         ? '0 4px 20px rgba(46,31,16,0.1)'
         : 'none';
     });
+    <a href="https://wa.me/5563XXXXXXXXX" class="whatsapp-float" target="_blank">
+    <span class="whatsapp-text">Falar com Débora</span>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="30">
+</a>
+
+<style>
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    text-decoration: none;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.05);
+}
+
+.whatsapp-text {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .whatsapp-text { display: none; } /* No celular fica apenas o ícone para não ocupar tela */
+    .whatsapp-float { padding: 15px; }
+}
+</style>
   </script>
 </body>
 </html>
